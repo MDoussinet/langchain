@@ -1,0 +1,21 @@
+[project]
+name = "langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain-cli>=0.0.36",
+    "langchain-core>=0.3.68",
+    "langgraph>=0.5.1",
+    "langsmith>=0.4.4",
+]
+
+[dependency-groups]
+dev = [
+    "langchain",
+]
+
+[tool.uv.sources]
+langchain = { workspace = true }
